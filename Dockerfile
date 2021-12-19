@@ -182,6 +182,7 @@ COPY ./supervisord.conf /etc/supervisord.conf
 
 # Override nginx's default config add max file 15/11/64
 COPY ./default.conf /etc/nginx/conf.d/default.conf  
+COPY ./stub_status.conf /etc/nginx/conf.d/stub_status.conf #  add new 19/12/64  
 # edit pdf  15/11/64
 COPY ./policy.xml /etc/ImageMagick-6
 #COPY ./www.conf /etc/php/7.3/fpm/pool.d/www.conf
